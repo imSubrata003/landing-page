@@ -53,15 +53,18 @@ const LandingPage = () => {
     };
   }, []);
 
+  const phone = "917980246814"; // Full number with country code (e.g., "919876543210" for India)
+  const message = "Hi! I'm reaching out from your website.";
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 to-black text-white">
-      <header className={`sticky top-0 z-50 bg-opacity-90 shadow-md ${scrollPosition > 730 ? "bg-gray-950" : ""}`}>
+      <header className={`sticky top-0 z-50 bg-opacity-90 shadow-md ${scrollPosition > 270 ? "bg-gray-950" : ""}`}>
         <nav className={`flex justify-between items-center p-6 max-w-7xl mx-auto `}>
           <h1
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="text-3xl font-bold text-yellow-400 cursor-pointer hover:text-yellow-300"
+            className="text-2xl font-bold text-yellow-400 cursor-pointer hover:text-yellow-300 sm:text-4xl"
           >
-            FF MOON
+            MOON FF
           </h1>
           <ul className="flex gap-6 text-yellow-400 font-medium">
             <li><a href="#features" className="hover:text-yellow-300">Features</a></li>
@@ -78,12 +81,15 @@ const LandingPage = () => {
         <p className="text-lg text-gray-300 max-w-xl">
           Join the next generation of betting with real-time insights, seamless experience, and top-tier security.
         </p>
-        <div className="flex gap-x-12">
+        <div className="flex gap-x-12 sm:flex-row flex-col sm:gap-y-0 gap-y-8">
+          <a href="#" className="w-full" onClick={() => { alert("Button clicked") }}>
+            <Button className="bg-yellow-400 text-black hover:bg-yellow-300 text-lg px-6 py-3 flex items-center gap-2 cursor-pointer">
+              Download the app <ArrowRight size={20} />
+            </Button>
+          </a>
+
           <Button className="bg-yellow-400 text-black hover:bg-yellow-300 text-lg px-6 py-3 flex items-center gap-2 cursor-pointer">
-            Download the app <ArrowRight size={20} />
-          </Button>
-          <Button className="bg-yellow-400 text-black hover:bg-yellow-300 text-lg px-6 py-3 flex items-center gap-2 cursor-pointer">
-            <a className="flex items-center gap-x-1.5" href="#contact">
+            <a className="flex items-center gap-x-1.5 w-full" href="#contact">
               Contact us <ArrowRight size={20} />
             </a>
           </Button>
@@ -130,15 +136,33 @@ const LandingPage = () => {
           Have questions or need support? Reach out to us anytime, and our dedicated team will assist you.
         </p>
         <Button className="bg-yellow-400 text-black hover:bg-yellow-300 text-lg px-6 py-3 flex gap-x-2">
-          <AtSign /> ffm4968@gmail.com
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ffm4968@gmail.com"
+            className="flex items-center gap-x-1.5"
+          >
+            <AtSign /> ffm4968@gmail.com
+          </a>
         </Button>
+
         <div className="flex gap-x-12 mt-6">
-          <Button className="bg-yellow-400 text-black hover:bg-yellow-300 text-lg px-6 py-3">
+          <Button
+            onClick={() => window.open("tel:+91-7980246814")}
+            className="bg-yellow-400 text-black hover:bg-yellow-300 text-lg px-6 py-3"
+          >
             <Phone />
           </Button>
-          <Button className="bg-yellow-400 text-black hover:bg-yellow-300 text-lg px-6 py-3">
-          <MessageCircle />
+
+
+
+          <Button
+            onClick={() =>
+              window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`)
+            }
+            className="bg-yellow-400 text-black hover:bg-yellow-300 text-lg px-6 py-3"
+          >
+            <MessageCircle />
           </Button>
+
+
         </div>
       </section>
 
