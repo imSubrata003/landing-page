@@ -48,7 +48,7 @@ const LandingPage = () => {
     };
   }, []);
 
-  const phone = '917980246814';
+  const phone = '916290074508';
   const message = "Hi! I'm reaching out from your website.";
 
   return (
@@ -151,7 +151,7 @@ const LandingPage = () => {
 
         <div className="flex flex-col sm:flex-row gap-4">
           <Button
-            onClick={() => window.open('tel:+91-7980246814')}
+            onClick={() => window.open('tel:+91-6290074508')}
             className="bg-yellow-400 text-black hover:bg-yellow-300 text-lg px-6 py-3 flex justify-center"
           >
             <Phone />
