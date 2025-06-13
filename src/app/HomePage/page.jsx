@@ -91,7 +91,7 @@ const LandingPage = () => {
           Join the next generation of betting with real-time insights, seamless experience, and top-tier security.
         </p>
         <div className="flex gap-x-12 sm:flex-row flex-col sm:gap-y-0 gap-y-8 w-full max-w-xl">
-          <a href="/files/app.apk" download className="w-full">
+          <a href="https://azpgkhd3ulsikk9w.public.blob.vercel-storage.com/moonff.apk" download className="w-full">
             <Button className="bg-yellow-400 text-black hover:bg-yellow-300 text-lg px-6 py-3 flex items-center justify-center gap-2 cursor-pointer w-full">
               Download the app <ArrowRight size={20} />
             </Button>
@@ -120,8 +120,8 @@ const LandingPage = () => {
                 {title === "Live Betting"
                   ? "Place bets in real-time and experience the thrill of live sports."
                   : title === "Secure Payments"
-                  ? "Enjoy fast, secure deposits and withdrawals with multiple payment options."
-                  : "Get data-driven tips and predictions from betting professionals."}
+                    ? "Enjoy fast, secure deposits and withdrawals with multiple payment options."
+                    : "Get data-driven tips and predictions from betting professionals."}
               </p>
             </CardContent>
           </Card>
@@ -129,9 +129,9 @@ const LandingPage = () => {
       </section>
 
       <section id="about" className="min-h-screen flex flex-col items-center justify-center text-center px-4 py-20">
-        <h2 className="text-4xl font-bold text-yellow-400 mb-4">About FF MOON</h2>
+        <h2 className="text-4xl font-bold text-yellow-400 mb-4">About MOON FF</h2>
         <p className="text-gray-300 max-w-2xl text-xl">
-          FF MOON is a revolutionary betting platform designed for enthusiasts who demand performance, speed, and cutting-edge analytics. We believe betting should be transparent, responsible, and thrilling.
+          MOON FF is a revolutionary betting platform designed for enthusiasts who demand performance, speed, and cutting-edge analytics. We believe betting should be transparent, responsible, and thrilling.
         </p>
       </section>
 
@@ -169,7 +169,7 @@ const LandingPage = () => {
       </section>
 
       <footer className="bg-gray-900 text-gray-500 text-center py-6">
-        &copy; {new Date().getFullYear()} FF MOON. All rights reserved.
+        &copy; {new Date().getFullYear()} MOON FF. All rights reserved.
       </footer>
     </div>
   );
