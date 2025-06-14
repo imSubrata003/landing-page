@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from 'react';
 import { ArrowRight, AtSign, MessageCircle, Phone } from 'lucide-react';
 
-// Button component
 export const Button = ({ children, className, ...props }) => {
   return (
     <button
@@ -15,17 +14,14 @@ export const Button = ({ children, className, ...props }) => {
   );
 };
 
-// Card component
 export const Card = ({ children, className }) => {
   return <div className={`rounded-2xl shadow-md ${className}`}>{children}</div>;
 };
 
-// CardContent component
 export const CardContent = ({ children, className }) => {
   return <div className={className}>{children}</div>;
 };
 
-// Landing Page
 const LandingPage = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
 
